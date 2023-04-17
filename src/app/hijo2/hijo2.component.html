@@ -1,3 +1,4 @@
+<h4>Hijo</h4>
 <table>
     <tr>
         <td>Nombre</td>
@@ -7,12 +8,12 @@
         <td>Direccion</td>
         <td>Email</td>
     </tr>
-    <tr *ngFor="let paciente of pacientes">
-        <td>{{paciente._nombre}}</td>
-        <td>{{paciente._apellidos}}</td>
-        <td>{{paciente._dni}}</td>
-        <td>{{paciente._telefono}}</td>
-        <td>{{paciente._direccion}}</td>
-        <td>{{paciente._email}}</td>
+    <tr *ngFor="let medico of persona">
+        <td>{{medico._nombre}}</td>
+        <td>{{medico._apellidos}}</td>
+        <td>{{medico._dni}}</td>
+        <td>{{medico._telefono}}</td>
+        <td>{{medico._direccion}}</td>
+        <td>{{medico._email}}</td>
     </tr>
 </table>

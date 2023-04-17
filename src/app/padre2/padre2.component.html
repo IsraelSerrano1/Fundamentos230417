@@ -1,5 +1,6 @@
 <h1>Hijo a Padre</h1>
 
+<h4>Padre</h4>
 <p>Nombre <input type="text" [(ngModel)]="persona._nombre"></p>
 <p>Apellidos <input type="text"[(ngModel)]="persona._apellidos"></p>
 <p>DNI <input type="number"[(ngModel)]="persona._dni"></p>
@@ -7,6 +8,6 @@
 <p>Dirección <input type="text"[(ngModel)]="persona._direccion"></p>
 <p>Email <input type="text"[(ngModel)]="persona._email"></p>
 
-<button type="submit" (click)="add()">Añadir Medico</button>
-<app-hijo2>[persona]="persona"</app-hijo2>
+<button type="button" (click)="add()">Añadir Medico</button>
+<app-hijo2 [persona]="medicos"></app-hijo2>
 

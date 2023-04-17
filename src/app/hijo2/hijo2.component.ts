@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./hijo2.component.css']
 })
 export class Hijo2Component {
-  @Input() pacientes: any=[];
+  @Input() persona: any=[];
 
 }

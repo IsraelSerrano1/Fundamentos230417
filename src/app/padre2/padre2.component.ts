@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { paciente } from '../_modelo/paciente';
+import { medico } from '../_modelo/medico';
 
 @Component({
   selector: 'app-padre2',
@@ -7,11 +7,11 @@ import { paciente } from '../_modelo/paciente';
   styleUrls: ['./padre2.component.css']
 })
 export class Padre2Component {
-  pacientes: paciente []= []
-  persona : paciente = new paciente("","",0,0,"","");
+  medicos: medico []= []
+  persona : medico = new medico("","",0,0,"","");
 
   add(){
-    this.pacientes.push(this.persona)
+    this.medicos.push(this.persona)
   }
 
 
