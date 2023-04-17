@@ -1,0 +1,31 @@
+<h1>Directivas</h1>
+
+<input type="text" placeholder="Escribe tu nombre" [(ngModel)]="nombre">
+
+<button (click)="comprobarIf()">Comprobar ngIf</button>
+<br>
+<p *ngIf="registrado; else sinNombre">{{nombre}}{{mensaje}}</p>
+
+<ng-template #sinNombre>
+    <p>No hay nombre</p>
+</ng-template>
+
+<br>
+<p>Listado de peliculas con ngFor:</p>
+<ul>
+    <li *ngFor="let pelicula of peliculas">{{pelicula}}</li>
+</ul>
+
+
+<p>Personaje de la Compañia del Anillo:</p>
+
+<ul [ngSwitch]="personaje">
+    <li *ngSwitchCase="'Aragorn'">Aragorn</li>
+    <li *ngSwitchCase="'Legolas'">Legolas</li>
+    <li *ngSwitchCase="'Gimli'">Gimli</li>    
+    <li *ngSwitchDefault>Elige un personaje entre Aragorn, Legolas y Gimli </li>
+  </ul>
+
+  <input type="text" [(ngModel)]="personaje">
+
+

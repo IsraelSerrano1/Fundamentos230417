@@ -1,0 +1,22 @@
+<h1>Padre a Hijo</h1>
+<app-hijo1 (enviarDatos)="addPaciente($event)"></app-hijo1>
+<table>
+    <tr>
+        <td>Nombre</td>
+        <td>Apellidos</td>
+        <td>DNI</td>
+        <td>Telefono</td>
+        <td>Direccion</td>
+        <td>Email</td>
+    </tr>
+    <tr *ngFor="let paciente of pacientes">
+        <td>{{paciente._nombre}}</td>
+        <td>{{paciente._apellidos}}</td>
+        <td>{{paciente._dni}}</td>
+        <td>{{paciente._telefono}}</td>
+        <td>{{paciente._direccion}}</td>
+        <td>{{paciente._email}}</td>
+    </tr>
+</table>
+
+
