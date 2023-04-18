@@ -12,6 +12,7 @@ export class Padre2Component {
 
   add(){
     this.medicos.push(this.persona)
+    this.persona = new medico("","",0,0,"","");
   }
 
 

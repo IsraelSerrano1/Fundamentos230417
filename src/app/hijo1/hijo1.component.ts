@@ -13,6 +13,7 @@ export class Hijo1Component {
   
   add(){
   this.enviarDatos.emit(this.persona)
+  this.persona= new paciente("","",0,0,"","")
   }
 
 }
